@@ -23,10 +23,6 @@ jobs:
       host: localhost
       username: pavanij2005
       key: jp-key
-      script: |
-        cd myapp
-        docker-compose pull
-        docker-compose up -d
         
       cd jpapp
       docker-compose pull
