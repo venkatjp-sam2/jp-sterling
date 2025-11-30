@@ -27,6 +27,7 @@ jobs:
         cd myapp
         docker-compose pull
         docker-compose up -d
+        
       cd jpapp
       docker-compose pull
       docker-compose up -d
