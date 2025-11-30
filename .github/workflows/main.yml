@@ -9,12 +9,6 @@ jobs:
    steps:
     - uses: actions/checkout@v3
     - uses: docker/login-action@v2
-      with:
-       username: pavanij2005
-       password: Pavani2023
     - uses: docker/build-push-action@v4
-      with:
-       username: pavanij2005
-       password: Pavani2023      
        push: true
        tags: pavanij2005/jpapp:v2
