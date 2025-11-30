@@ -5,21 +5,16 @@ on:
    - main
 jobs:
   build_and_push:
+   runs-on: ubuntu-latest
    steps:
     - uses: actions/checkout@v3
     - uses: docker/login-action@v2
       with:
-      username: pavanij2005
-      password: Pavani2023
+       username: pavanij2005
+       password: Pavani2023
     - uses: docker/build-push-action@v4
       with:
-      push: true
-      tags: pavanij2005/jpapp:v2
-  deploy:
-   needs: build_and_push
-   steps:
-    - uses: appleboy/ssh-action@v1.0.3
-      with:
-      host: localhost
-      username: pavanij2005
-      key: jp-key
+       username: pavanij2005
+       password: Pavani2023      
+       push: true
+       tags: pavanij2005/jpapp:v2
