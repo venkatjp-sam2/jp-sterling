@@ -11,7 +11,7 @@ pipeline {
 				steps {
 					withCredentials([string(credentialsId: '@Govinda2050@', variable: 'DOCKER_PASS')]) {
 					sh "echo $DOCKER_PASS | docker login -u pavanij2005 --password-stdin"
-					sh "docker push pavanij2005/myapp:$BUILD_NUMBER"
+					sh "docker push venkata2026/myapp:$BUILD_NUMBER"
 					}
 			}
 		}
